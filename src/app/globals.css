@@ -2,6 +2,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --font-roboto: 'Roboto', sans-serif;
+  --subcontainer: #080808;
+  --navbar-width: 10rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,6 +37,8 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   html {

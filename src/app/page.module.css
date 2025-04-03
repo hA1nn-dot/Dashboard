@@ -1,3 +1,4 @@
+
 .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
@@ -7,8 +8,38 @@
   --button-secondary-hover: #f2f2f2;
 }
 
-.metrics{
-  width: 1500px;
-  justify-content: space-around;
+.main{
   display: flex;
+}
+
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.subContainer{
+  width: calc(100vw - var(--navbar-width) - 20px);
+  margin: 0 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+}
+
+.date_pickers{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.date_picker{
+  color: red;
+}
+
+.metrics{
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  overflow-x: auto;
 }
