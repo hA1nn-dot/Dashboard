@@ -4,6 +4,7 @@
   --font-roboto: 'Roboto', sans-serif;
   --subcontainer: #080808;
   --navbar-width: 14rem;
+  --padding-container: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
