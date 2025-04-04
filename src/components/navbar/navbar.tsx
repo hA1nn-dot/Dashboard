@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image'
 import { Avatar } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
+import Button from '@mui/material/Button';
 import {
   AppstoreOutlined,
   ContainerOutlined,
@@ -13,7 +14,6 @@ import {
   PieChartOutlined,
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
-import { Button, Menu } from 'antd';
 
 const items: MenuItem[] = [
     { key: '1', icon: <PieChartOutlined />, label: 'Option 1' },
@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
             <p className={styles.description}>Application Development Specialist</p>
           </div>
         </div>
-
+        <Button variant="contained">Hello world</Button>
         
         
     </div>  
