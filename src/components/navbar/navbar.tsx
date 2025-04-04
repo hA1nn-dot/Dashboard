@@ -72,10 +72,10 @@ const Navbar: React.FC = () => {
           
         </div>
         <div className={styles.userDescription}>
-          <Avatar size={36} icon={<UserOutlined />} />
-          <div>
-            <p className={styles.description}>Mario Enrique Castillo Cuellar</p>
-            <p className={styles.description}>Admin</p>
+          <Avatar size={48} icon={<UserOutlined />} />
+          <div className={styles.userDescription}>
+            <p className={styles.name}>Haim Guel Quiroz</p>
+            <p className={styles.description}>Application Development Specialist</p>
           </div>
         </div>
 
