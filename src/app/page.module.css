@@ -43,3 +43,8 @@
   gap: 15px;
   overflow-x: auto;
 }
+
+.filters{
+  display: flex;
+  gap: 2rem;
+}

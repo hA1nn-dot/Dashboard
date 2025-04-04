@@ -1,7 +1,8 @@
 import styles from "./page.module.css";
 import Metric from "@/components/metric/metric";
 import Navbar from "@/components/navbar/navbar";
-import { Table } from "antd";
+import Filter from "@/components/filters/filter";
+import { Table, Select } from "antd";
 import Image from 'next/image'
 
 export default function Home() {
@@ -79,6 +80,12 @@ export default function Home() {
       key: 'entry',
     }
   ];
+
+  const optionsRecord = [
+    { values: 1, label: 'Option 1' },
+    { values: 2, label: 'Option 2' },
+    { values: 3, label: 'Option 3' },
+  ];
   return (
     <div className={styles.main}>
       <Navbar/>
@@ -103,8 +110,9 @@ export default function Home() {
           <Metric title="Resolved Tickets" amount="18,208" measure={8}/>
           <Metric title="Average First Time Reply" amount="12:01min" measure={8}/>
         </div>
-        <div className={styles.subContainer}>
-          Hola
+        <div className={`${styles.subContainer} ${styles.filters}`}>
+          <Filter list={optionsRecord}/>
+          <Filter list={optionsRecord}/>
         </div>
 
         <div className={styles.subContainer}>
