@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
             <p className={styles.description}>Application Development Specialist</p>
           </div>
         </div>
-        <Button variant="contained">Hello world</Button>
+        <Button variant="contained">Sign in</Button>
         
         
     </div>  

@@ -1,5 +1,6 @@
 .navbar{
     min-width: var(--navbar-width);
+    position: fixed;
     background: rgb(15, 23, 42);
     height: 100vh;
     border-right: 1px solid #383838;
