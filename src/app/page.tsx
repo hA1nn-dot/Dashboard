@@ -1,8 +1,10 @@
+
 import styles from "./page.module.css";
 import Metric from "@/components/metric/metric";
 import Navbar from "@/components/navbar/navbar";
-import { TableProps } from "@mui/material";
-import { Table, Select } from "antd";
+import { Table } from "antd";
+import SelectFilter  from '@/components/filters/selectFilter';
+
 
 export default function Home() {
   const dataSource = [
@@ -84,16 +86,6 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <Navbar/>
-      {/* <div className={styles.navbar}>
-          <Image
-            className={styles.logo}
-            src="/logo/goodyear-logo-yellow.png"
-            width={120}
-            height={20}
-            alt="Goodyear logo"
-          />
-          
-      </div>   */}
       <div className={styles.mainContainer}>
         <div className={`${styles.metrics} ${styles.subContainer}`}>
           <Metric title="Created Tickets" amount="24,208" measure={-5}/>
@@ -103,7 +95,7 @@ export default function Home() {
           
         </div>
         <div className={`${styles.subContainer} ${styles.filters}`}>
-          <div className={styles.box}>1</div>
+          <div className={styles.box}><SelectFilter/></div>
           <div className={styles.box}>2</div>
           <div className={styles.box}>3</div>
           <div className={styles.box}>4</div>
